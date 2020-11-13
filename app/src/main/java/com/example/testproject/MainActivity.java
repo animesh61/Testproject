@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         combineImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Save successfully!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this," Image Save successfully!",Toast.LENGTH_SHORT).show();
                 ContextWrapper cw = new ContextWrapper(getApplicationContext());
                 File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
                 File file = new File(directory, "Mergefile" + ".jpg");
